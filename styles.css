@@ -222,6 +222,11 @@ header p {
 
 /* ICONS */
 
+.icon-styles {
+  font-size: 60px;
+  color: black;
+}
+
 .icons {
   height: 5vh;
   width: 100%;
