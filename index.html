@@ -10,74 +10,76 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
   <script src="https://kit.fontawesome.com/d72226136e.js" crossorigin="anonymous"></script>
-  
 </head>
+
 <body>
 		      					<!-- Introduction Section -->
-
-<div class="container-area">
-	<header class="intro">
-		 		<div class="area i-area">
+                    
+                    <div class="container-area">
+                      <header class="intro">
+                        <div class="area">
 		 		 <img class="shadow" src="images/circle.png" alt="My picture!">
-  			      <h1>Hi! I'm Shanis</h1>
-  			     <p>A Frontend Developer!</p>
-  			</div>
-	</header>
-	<main>
-		 	        
-              				<!-- About Me Section -->
-
-		 	<section class="s1 s1-s3-bg">
-		 	  <div class="area a-area">
-		 	 	  <div class="about1">
-		 		   <h2><span class="span-arrow"> <</span>About<span class="span-arrow">/> </span></h2>
-		 				 <div class="what-i-know shadow"><h3>What I Know</h3>
-        	<ul>
-          		<li>JavaScript, CSS, HTML</li>
-          		<li>Git, Node.JS</li>
-          		<li>Databases, Clean Code </li>
-        	</ul></div>
+          <h1>Hi! I'm Shanis</h1>
+          <p>A Frontend Developer!</p>
         </div>
-          <div class="about2">
-        		<p>As a Frontend Developer, I love a challenge, have a <b>huge</b> thirst for knowledge, and I always aim for precision in all my results, and all while running entirely on coffee and passion!</p>
-     		   		<p>
-        			I've always been around PC's, learning them and building them from scratch. So naturally, the nerd in me hopped right into programming, hand-coded this website and I've been loving every minute thereafter!
-          When I'm not making coffee, cooking, or baking, I'm refining my programming skills and learning new things.
+      </header>
+      <main>
+        
+        <!-- About Me Section -->
+        
+        <section class="s1-s3-bg">
+          <div class="area about-me-box">
+           <div class="about1">
+             <h2><span class="span-arrow"> <</span>About<span class="span-arrow">/> </span></h2>
+             <div class="what-i-know shadow"><h3>What I Know</h3>
+              <ul>
+                <li>JavaScript, CSS, HTML</li>
+                <li>Git, Node.JS</li>
+                <li>Databases, Clean Code </li>
+              </ul></div>
+            </div>
+            <div class="about-me">
+              <p>As a Frontend Developer, I love a challenge, have a <b>huge</b> thirst for knowledge, and I always aim for precision in all my results, and all while running entirely on coffee and passion!</p>
+              <p>
+                I've always been around PC's, learning them and building them from scratch. So naturally, the nerd in me hopped right into programming, hand-coded this website and I've been loving every minute thereafter!
+                When I'm not making coffee, cooking, or baking, I'm refining my programming skills and learning new things.
        		   </p>
-    	   </div>
-    	 </div>
-		 	</section>
-		 
-          							 <!-- Projects Section -->
+            </div>
+          </div>
+        </section>
+        
+        <button id="scroll-to-top-btn">
+          <i class="fas fa-chevron-circle-up"></i>
+        </button>
+        <!-- Projects Section -->
+        
 
 		 <div class="border-color">
-	     </div>
-		    	<section class="s2 s2-bg">
-		 	      <div class="area">
-		 	 	      <div class="p-area">
-		 		     <span class="span2-h2"><h2><span class="span-arrow"> <</span>Projects<span class="span-arrow">/> </span></h2></span>
-		 		   <span class="span-p"><p>A few fun and inspired projects</p></span>
-		 	</div>
-
-
-		 	            <!-- FIRST CARD POPUP BLOCK -->
-    
-    <div class="popup" id="popup-1">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="close-btn" onclick="togglePopup()">&times;</div>
-    <h1>Guessing Game</h1>
-    <p>
-      This is one of my first 'larger' JS projects I had done. I aimed for clean, readable code, with clear-to-read variables, not too many comments, and a clean interface! The toughest thing here for me was that beginning learning stages of how everything worked with each other, in respect to its scopes and attachments etc. I definitely enjoyed the challenge and adore the outcome! Thanks for viewing! </p> 
-      <br />
+    </div>
+    <section class="s2 s2-bg">
+      <div class="area">
+        <div class="projects">
+          <span class="span2-h2"><h2><span class="span-arrow"> <</span>Projects<span class="span-arrow">/> </span></h2></span>
+          <span class="span-p"><p>A few fun and inspired projects</p></span>
+        </div>
+        
+        
+        <!-- FIRST CARD POPUP BLOCK -->
+        
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Guessing Game</h1>
+            <p>
+              This is one of my first 'larger' JS projects I had done. I aimed for clean, readable code, with clear-to-read variables, not too many comments, and a clean interface! The toughest thing here for me was that beginning learning stages of how everything worked with each other, in respect to its scopes and attachments etc. I definitely enjoyed the challenge and adore the outcome! Thanks for viewing! </p> 
+              <br />
       <p>
-      <a href="https://github.com/ShanisFelicissimo/funGuessingGame" target="_blank">GitHub files here!</a>
+      <a href="https://github.com/ShanisFelicissimo/funGuessingGame" target="_blank">GitHub files</a>
       <br />
-      <a href="https://shanisfelicissimo.github.io/funGuessingGame/" target="_blank">Deployment page here!</a> 
+      <a href="https://shanisfelicissimo.github.io/funGuessingGame/" target="_blank">Deployment page</a> 
     </p>
   </div>
 </div>
@@ -93,9 +95,10 @@
       Thanks for viewing!
      </p>
     <br />
-      <a href="https://github.com/ShanisFelicissimo/mapty" target="_blank">GitHub files here!</a>
+    <p>
+      <a href="https://github.com/ShanisFelicissimo/mapty" target="_blank">GitHub files</a>
       <br />
-      <a href="https://shanisfelicissimo.github.io/mapty/" target="_blank">Deployment page here!</a> 
+      <a href="https://shanisfelicissimo.github.io/mapty/" target="_blank">Deployment page</a> 
     </p>
   </div>
 </div>
@@ -114,9 +117,9 @@
     <br />
     <p>
     <a href="https://github.com/ShanisFelicissimo/pigGame" 
-    target="_blank">GitHub files here!</a>
+    target="_blank">GitHub files</a>
     <br />
-    <a href="https://shanisfelicissimo.github.io/pigGame/" target="_blank">Deployment page here!</a> 
+    <a href="https://shanisfelicissimo.github.io/pigGame/" target="_blank">Deployment page</a> 
   </p>
   </div>
 </div>
@@ -131,10 +134,11 @@
       **PLEASE READ**
       Please use 'uo' and pin '1111' for user one, and 'ut' with pin 2222 for user two! Have fun transfering back and forth and applying for loans! (I wish it was that easy!)
     </p>
+    <br />
     <p>
-      <a href="https://github.com/ShanisFelicissimo/bankistApp" target="_blank">GitHub files here!</a>
+      <a href="https://github.com/ShanisFelicissimo/bankistApp" target="_blank">GitHub files</a>
       <br />
-      <a href="https://shanisfelicissimo.github.io/bankistApp/" target="_blank">Deployment page here!</a> 
+      <a href="https://shanisfelicissimo.github.io/bankistApp/" target="_blank">Deployment page</a> 
     </p>
   </div>
 </div>   
@@ -219,7 +223,7 @@
 						 <!-- Contacts Section -->
 		 
 		 	<section class="s3 s1-s3-bg">
-		 	 <div class="area c-area">
+		 	 <div class="area contact">
 		 		<span class="span-h2"><h2><span class="span-arrow"> <</span>Contact<span class="span-arrow">/></span></h2></span>
 		 		<span class="span-p"><p>Need help with a project or looking to hire? I'd love to hear from you!
     <a href="mailto:felicissimo.shanis@gmail.com" target="_blank" rel="noopener">felicissimo.shanis@gmail.com</a></p></span>
