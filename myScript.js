@@ -14,6 +14,7 @@ function togglePopup3() {
   document.getElementById("popup-4").classList.toggle("active");
 }
 
+// Scroll to the top button
 const btnScrollToTop = document.querySelector("#scroll-to-top-btn");
 
 const handleScroll = function () {
@@ -23,11 +24,9 @@ const handleScroll = function () {
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
 
-  if (scrollTop / scrolledVSClientHeight > ratio) {
-    btnScrollToTop.style.display = "block";
-  } else {
-    btnScrollToTop.style.display = "none";
-  }
+  scrollTop / scrolledVSClientHeight > ratio
+    ? (btnScrollToTop.style.display = "block")
+    : (btnScrollToTop.style.display = "none");
 };
 document.addEventListener("scroll", handleScroll);
 
@@ -38,3 +37,21 @@ btnScrollToTop.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+// Fade in animation
+const items = document.querySelectorAll(".appear2");
+
+const active = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("inview2");
+    } else {
+      entry.target.classList.remove("inview2");
+    }
+  });
+};
+const io2 = new IntersectionObserver(active);
+for (let i = 0; i < items.length; i++) {
+  io2.observe(items[i]);
+}
+//  Image appearance

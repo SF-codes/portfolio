@@ -1,8 +1,16 @@
+:root {
+  --font-color: #333333;
+  --intro-bgcolor: #3b5077;
+  --about-contact-bgcolor: #f4f4f4;
+  --project-bgcolor: #d8dce4;
+  --span-color: #d3a052;
+}
+
 body {
   margin: 0;
   font-size: 1em;
   overflow-x: hidden;
-  background-color: #f4f4f4 !important;
+  background-color: var(--about-contact-bgcolor) !important;
 }
 
 button {
@@ -13,11 +21,11 @@ button {
 
 .span-arrow {
   font-size: 3.5rem;
-  color: #d3a052;
+  color: var(--span-color);
 }
 
 #scroll-to-top-btn {
-  color: #d3a052;
+  color: var(--span-color);
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -37,6 +45,45 @@ button {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
+/* Fade-in animation on sections */
+
+.appear2 {
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear2.inview {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+.appear2.inview2 {
+  opacity: 1;
+  transform: none;
+}
+
+.appear2.inview2:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.appear2.inview2:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.appear2.inview2:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.appear2.inview2:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.appear2.inview2:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
 /* Typeography */
 
 ul {
@@ -46,19 +93,19 @@ ul {
 h1 {
   font-size: 4.5rem;
   font-family: "Roboto", sans-serif;
-  color: #3b5077;
+  color: var(--intro-bgcolor);
 }
 
 h2 {
   font-size: 3rem !important;
   font-family: "Roboto", sans-serif;
-  color: #3b5077;
+  color: var(--intro-bgcolor);
 }
 
 p {
   font-size: 1.5rem;
   font-family: "Biryani", sans-serif;
-  color: #323232;
+  color: var(--font-color);
 }
 
 /* What I Know box font size */
@@ -66,14 +113,14 @@ p {
 h3 {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
-  color: #323232;
+  color: var(--font-color);
   width: 100%;
   padding-left: 1em;
 }
 
 .intro h1,
 header p {
-  color: #f4f4f4;
+  color: var(--about-contact-bgcolor);
 }
 
 .intro h1 {
@@ -91,7 +138,7 @@ header p {
   align-items: center;
   height: 100vh;
   min-height: 700px;
-  background-color: #3b5077;
+  background-color: var(--intro-bgcolor);
 }
 
 .intro img {
@@ -101,11 +148,11 @@ header p {
 }
 
 .s2-bg {
-  background-color: #d8dce4;
+  background-color: var(--project-bgcolor);
 }
 
 .s1-s3-bg {
-  background-color: #f4f4f4;
+  background-color: var(--about-contact-bgcolor);
 }
 
 .area {
@@ -130,6 +177,7 @@ header p {
 .about-me {
   text-align: left;
   width: 60%;
+  padding-top: 8.5em;
 }
 
 /* 'what I know' box */
@@ -142,14 +190,14 @@ header p {
 }
 
 .what-i-know h2 {
-  color: #323232;
+  color: var(--font-color);
 }
 
 .what-i-know ul {
   padding-bottom: 1em;
   font-size: 1.1em;
   font-family: "Biryani", sans-serif;
-  color: #323232;
+  color: var(--font-color);
 }
 
 /* Project Section */
@@ -191,12 +239,12 @@ header p {
   margin-top: 1em;
   margin-bottom: 0 auto;
   font-family: "Biryani", sans-serif;
-  color: #323232;
+  color: var(--font-color);
 }
 
 .border-color {
   height: 6em;
-  background-color: #d8dce4;
+  background-color: var(--project-bgcolor);
 }
 
 /* CARD DECK */
@@ -223,7 +271,7 @@ header p {
 .col:hover {
   cursor: pointer;
   transform: translateY(-5px);
-  color: #d3a052;
+  color: var(--span-color);
 }
 
 /* ICONS */
@@ -259,7 +307,7 @@ header p {
 
 .footer-section {
   height: 6vh;
-  background-color: #3b5077;
+  background-color: var(--intro-bgcolor);
 }
 
 /* POPUP MODALS */
@@ -287,7 +335,7 @@ header p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background: #d8dce4;
+  background: var(--project-bgcolor);
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
@@ -423,6 +471,7 @@ header p {
   }
 
   .about-me {
+    padding-top: 0;
     width: 60%;
   }
 
@@ -467,6 +516,7 @@ header p {
   }
 
   .about-me {
+    padding-top: 0;
     width: 100%;
   }
 
