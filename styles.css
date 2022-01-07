@@ -84,6 +84,17 @@ button {
   transition-delay: 0.5s;
 }
 
+#navigation {
+  background-color: var(--intro-bgcolor);
+}
+#navigation a {
+  color: var(--about-contact-bgcolor);
+}
+#navigation a:hover {
+  color: var(--span-color);
+  transition: 0.3s ease-out;
+  transition: 0.3s ease-in-out;
+}
 /* Typeography */
 
 ul {
@@ -93,7 +104,11 @@ ul {
 h1 {
   font-size: 4.5rem;
   font-family: "Roboto", sans-serif;
-  color: var(--intro-bgcolor);
+  color: var(--about-contact-bgcolor);
+}
+
+.intro p {
+  color: var(--about-contact-bgcolor);
 }
 
 h2 {
@@ -249,6 +264,17 @@ header p {
 
 /* CARD DECK */
 
+.card-body {
+  flex-grow: 0;
+}
+
+.card-img-top {
+  flex-grow: 1;
+  width: 100%;
+  /* height: 15vw; */
+  object-fit: contain;
+}
+
 .card h5 {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
@@ -268,9 +294,13 @@ header p {
   text-align: center;
 }
 
+.col {
+  transition: 0.3s ease-out;
+}
 .col:hover {
   cursor: pointer;
   transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
   color: var(--span-color);
 }
 
@@ -295,13 +325,14 @@ header p {
   text-decoration: none;
   border: none;
   background: inherit;
+  transition: 0.3s ease-out;
 }
 
 .icons button:hover {
   cursor: pointer;
   border-radius: 10%;
   background: inherit;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateY(-5px);
 }
 
@@ -433,6 +464,10 @@ header p {
     right: 10px;
     top: 10px;
   }
+
+  #navigation li {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -546,10 +581,5 @@ header p {
   .icons button:hover {
     transition: none;
     transform: none;
-  }
-
-  svg {
-    height: 35px;
-    width: 35px;
   }
 }
