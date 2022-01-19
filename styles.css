@@ -314,6 +314,7 @@ header p {
   font-size: 60px;
   color: black;
 }
+
 .icon-styles:hover {
   color: var(--span-color);
 }
@@ -475,6 +476,10 @@ header p {
   #navigation li {
     font-size: 0.8rem;
   }
+
+  .icon-styles:hover {
+    color: black;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -492,6 +497,10 @@ header p {
 
   .span-arrow {
     font-size: 2.8rem;
+  }
+
+  .icon-styles:hover {
+    color: black;
   }
 }
 
@@ -544,6 +553,10 @@ header p {
     transition: all 0.2s ease-in-out;
     transform: translateY(-5px);
   }
+
+  .icon-styles:hover {
+    color: black;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -588,5 +601,9 @@ header p {
   .icons button:hover {
     transition: none;
     transform: none;
+  }
+
+  .icon-styles:hover {
+    color: black;
   }
 }
