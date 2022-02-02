@@ -1,6 +1,6 @@
 # portfolio
 
-This is my current portfolio!
+This is my portfolio!
 
 ### Links
 Live Site URL: https://sf-codes.github.io/portfolio/
