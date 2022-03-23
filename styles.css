@@ -23,6 +23,9 @@ button {
   font-size: 3.5rem;
   color: var(--span-color);
 }
+.span-gold-color {
+  color: var(--span-color);
+}
 
 #scroll-to-top-btn {
   color: var(--span-color);
